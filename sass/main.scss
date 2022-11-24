@@ -1,3 +1,15 @@
   @import './utils/variables';
-  @import './utils/_visioly-hidden';
+  @import './base/_general-style';
+  @import './utils/placeholders';
   @import './components/page-header';
+  @import './components/logo';
+  @import './components/hero-section';
+  @import './components/preferences-section';
+  @import './components/projects-section';
+  @import './components/team-section';
+  @import './components/social-networks';
+  @import './components/clients-section';
+  @import './components/footer';
+  @import './components/footer-network-bloc';
+  @import './components/footer-form-bloc';
+

@@ -1,0 +1,41 @@
+.team__section {
+  @extend %section;
+  background-color: $secondary-bgr;
+}
+.team__list {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+}
+.team__item {
+  width: 270px;
+  box-shadow: $person-card-shedow;
+}
+.team__item {
+  margin-top: 16px;
+}
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+.team__image {
+  display: block;
+}
+.team__description {
+  max-width: 370px;
+  padding: 30px 10px;
+  background-color: $white-color;
+  border: 1px solid $portfolio-cards-brd;
+  border-top: none;
+}
+.team__name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.19;
+  text-align: center;
+  color: $secondary-text-color;
+}
+.team__position {
+  line-height: 1.19;
+  text-align: center;
+  color: $main-text-color;
+}
