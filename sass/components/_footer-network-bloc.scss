@@ -25,11 +25,12 @@
     background: $icon-footer-bgr;
     border-radius: 50%;
     transition: background-color $transition-time $function-time;
+    &:hover,
+    :focus {
+      background-color: $acsent-color;
+    }
   }
-  .footer-network__item:hover,
-  .footer-network__item:focus {
-    background-color: $acsent-color;
-  }
+ 
   .footer-network__link {
     @extend %link;
     height: 100%;

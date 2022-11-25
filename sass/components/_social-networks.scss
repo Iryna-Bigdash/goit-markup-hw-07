@@ -26,10 +26,9 @@
   
     transition: background-color $transition-time $function-time,
       fill $transition-time $function-time;
-  }
-  
-  .social-networks__link:hover,
-  .social-networks__link:focus {
-    background-color: $acsent-color;
-    fill: $white-color;
+    &:hover,
+    &:focus {
+        background-color: $acsent-color;
+        fill: $white-color;
+      }
   }

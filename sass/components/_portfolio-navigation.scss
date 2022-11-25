@@ -29,12 +29,14 @@
     transition: background-color $transition-time $function-time,
       box-shadow $transition-time $function-time,
       color $transition-time $function-time;
+
+    &:hover,
+    &:focus {
+        background-color: $acsent-color;
+        color: $white-color;
+        box-shadow: $portfolio-nav-buttons-shadow;
+        border-radius: 4px;
+      }
   }
   
-  .portfolio-nav__button:hover,
-  .portfolio-nav__button:focus {
-    background-color: $acsent-color;
-    color: $white-color;
-    box-shadow: $portfolio-nav-buttons-shadow;
-    border-radius: 4px;
-  }
+ 

@@ -14,10 +14,10 @@
     cursor: pointer;
   
     transition: box-shadow $transition-time $function-time;
-  }
-  .portfolio-cards__item:hover,
-  .portfolio-cards__item:focus {
-    box-shadow: $portfolio-cards-shedow;
+    &:hover,
+    &:focus {
+      box-shadow: $portfolio-cards-shedow;
+    }
   }
   .card-thumb__bloc {
     display: block;

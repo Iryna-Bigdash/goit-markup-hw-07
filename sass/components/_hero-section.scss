@@ -2,7 +2,6 @@
   padding: 200px 0;
   text-align: center;
 }
-
 .hero__tittle {
   margin: 0 auto 30px;
   max-width: 696px;
@@ -17,15 +16,14 @@
   @extend %button;
   padding: 10px 32px;
   display: inline-block;
-}
-.button:hover,
-.button:focus,
-.button:active {
+  &:hover,
+  &:focus,
+  &:active {
   background-color: $secondary-acsent-color;
   box-shadow: $main-shadow;
   border-radius: 4px;
 }
-
+ }
 .overlay {
   max-width: 1600px;
   min-height: 600px;

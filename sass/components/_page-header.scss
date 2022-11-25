@@ -43,6 +43,10 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: color $transition-time $function-time;
+    &:hover,
+    &:focus {
+    color: $acsent-color;
+  }
   }
   .header-nav__link::after {
     content: " ";
@@ -86,6 +90,10 @@
   .contacts__item {
     cursor: pointer;
     transition: color $transition-time $function-time;
+    &:focus .contacts__link,
+    &:hover .contacts__link {
+      color: $acsent-color;
+    }
   }
   .contacts-mail__icon {
     width: 16px;
@@ -101,10 +109,3 @@
     fill: currentColor;
     transition: fill $transition-time $function-time;
   }
-  .header-nav__link:hover,
-  .header-nav__link:focus,
-  .contacts__item:focus .contacts__link,
-  .contacts__item:hover .contacts__link {
-    color: $acsent-color;
-  }
-  

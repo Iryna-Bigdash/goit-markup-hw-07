@@ -20,12 +20,6 @@
   .footer-contacts__item:not(:last-child) {
     margin-bottom: 9px;
   }
-  .footer-contacts__item:hover .footer-contacts__link,
-  .footer-contacts__item:focus .footer-contacts__link,
-  .footer-contacts__item:hover .footer__adress,
-  .footer-contacts__item:focus .footer__adress {
-    color: $acsent-color;
-  }
   .footer-contacts__link {
     @extend %link;
     font-family: $primery-fonts;
@@ -36,8 +30,17 @@
     color: $footer-contacts-color;
     text-decoration: none;
     transition: color $transition-time $function-time;
+    &:hover,
+    &:focus {
+  color: $acsent-color;
+}
+
   }
   .footer__adress {
     color: $white-color;
     transition: color $transition-time $function-time;
+    &:hover,
+    &:focus {
+  color: $acsent-color;
+}
   }
