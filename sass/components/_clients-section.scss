@@ -1,20 +1,32 @@
-.clients__section {
-    @extend %section;
+.clients {
+  @extend %section;
+
+  &__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    text-align: center;
+    color: $secondary-text-color;
+  }
 }
-.clients__list {
+
+.clients {
+  &__list {
     @extend %list;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-  } 
-  .clients__item {
+  }
+
+  &__item {
     width: 170px;
     height: 92px;
   }
-  .clients__item:not(:last-child) {
+
+  &__item:not(:last-child) {
     margin-right: 30px;
   }
-  .clients__link {
+
+  &__link {
     @extend %link;
     width: 100%;
     height: 100%;
@@ -24,14 +36,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  
+
     transition: fill $transition-time $function-time;
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
       fill: $acsent-color;
       border: 1px solid $acsent-color;
     }
   }
-  .clients__icone {
+
+  &__icone {
     width: 106px;
     height: 60px;
   }
+}

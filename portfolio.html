@@ -13,28 +13,31 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-      <link rel="stylesheet" href="./css/portfolio.min.css">
+      <link rel="stylesheet" href="./css/main.min.css">
   </head>
 
   <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header page-header">
       <div class="header__container container">
-        <nav class="header__nav">
+        <nav class="header__nav nav-block">
           <div class="logo__container">
             <a href="./index.html" lang="en" class="logo link">
               Web
-              <span class="header__logo">Studio</span>
+              <span class="logo--black">Studio</span>
             </a>
           </div>
-          <ul class="header-nav__list list">
-            <li class="header-nav__item">
-              <a href="./index.html" class="header-nav__link link">Студія</a>
-            </li>
+
+          <ul class="header-nav__list list ">
             <li class="header-nav__item">
               <a
-                href="./portfolio.html"
-                class="header-nav__link link header-nav__link--current">
+                href="./index.html"
+                class="header-nav__link link">
+                Студія
+              </a>
+            </li>
+            <li class="header-nav__item">
+              <a href="./portfolio.html" class="header-nav__link link header-nav__link--current">
                 Портфоліо
               </a>
             </li>
@@ -43,7 +46,8 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts__list list">
+
+        <ul class="contacts list">
           <li class="contacts__item">
             <a
               href="mailto:info@devstudio.com"
@@ -69,7 +73,7 @@
 
     <main>
       <!-- Nav-buttons -->
-      <section class="portfolio-nav__section section">
+      <section class="portfolio-nav section">
         <div class="portfolio-nav__container container">
           <h2 class="section__title section__title--hidden">Пошук за категоріями</h2>
           <ul class="portfolio-nav__list list">
@@ -100,10 +104,11 @@
         </div>
 
         <!-- Poftfolio cards -->
-        <div class="portfolio-cards__container container">
+        <div class="portfolio-cards container">
           <h2 class="section__title--hidden">Категорії портфоліо</h2>
           <ul class="portfolio-cards__list list">
             <li class="portfolio-cards__item">
+
               <div class="card-thumb__bloc">
                 <img
                   src="./images/technokryak.jpg"
@@ -295,14 +300,12 @@
       </section>
     </main>
 
-    <!-- Footer -->
+     <!-- Footer -->
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer-contacts__bloc">
+        <div class="footer-contacts">
           <a href="./index.html" lang="en" class="logo link footer__logo">
-            Web
-            <span class="logo--reverse">Studio</span>
-          </a>
+            Web<span class="footer__logo--reverse">Studio</span></a>
           <address>
             <ul class="footer-contacts__list list">
               <li class="footer-contacts__item">
@@ -311,7 +314,7 @@
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="footer-contacts__link link">
-                  <span class="footer__adress">
+                  <span class="footer-contacts__adress">
                     м. Київ, пр-т Лесі Українки, 26
                   </span>
                 </a>
@@ -333,7 +336,7 @@
           </address>
         </div>
         <!-- Footer Social Network -->
-        <div class="footer-network__bloc">
+        <div class="footer-network">
           <p class="footer-network__title">ПРИЄДНУЙТЕСЬ</p>
           <ul class="footer-network__list list">
             <li class="footer-network__item item">
@@ -369,7 +372,7 @@
         <!-- Footer Form  -->
         <div class="footer-form__container">
           <h2 class="footer-form__title">Підпишіться на розсилку</h2>
-          <form class="footer-form">
+          <form class="footer-form__form">
             <input
               type="text"
               placeholder="E-mail"

@@ -1,16 +1,15 @@
-.portfolio-nav__section {
-    @extend %section;
-}
-.portfolio-nav__container {
+.portfolio-nav {
+  @extend %section;
+  &__container {
     margin-bottom: 50px;
   }
-  .portfolio-nav__list {
+  &__list {
     @extend %list;
     display: flex;
     justify-content: center;
     gap: 8px;
   }
-  .portfolio-nav__button {
+  &__button {
     padding: 6px 22px;
     min-width: 73px;
     display: inline-block;
@@ -25,18 +24,17 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  
+
     transition: background-color $transition-time $function-time,
       box-shadow $transition-time $function-time,
       color $transition-time $function-time;
 
     &:hover,
     &:focus {
-        background-color: $acsent-color;
-        color: $white-color;
-        box-shadow: $portfolio-nav-buttons-shadow;
-        border-radius: 4px;
-      }
+      background-color: $acsent-color;
+      color: $white-color;
+      box-shadow: $portfolio-nav-buttons-shadow;
+      border-radius: 4px;
+    }
   }
-  
- 
+}

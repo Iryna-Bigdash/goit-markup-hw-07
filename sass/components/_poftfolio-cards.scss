@@ -1,24 +1,26 @@
-.portfolio-cards__list {
-  @extend %list;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .portfolio-cards__item {
-    min-width: 370px;
-    min-height: 404px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    outline: 1px solid $portfolio-cards-brd;
-    border-top: none;
-    cursor: pointer;
-  
-    transition: box-shadow $transition-time $function-time;
-    &:hover,
-    &:focus {
-      box-shadow: $portfolio-cards-shedow;
+.portfolio-cards {
+  &__list {
+    @extend %list;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-  }
+    &__item {
+      min-width: 370px;
+      min-height: 404px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+      outline: 1px solid $portfolio-cards-brd;
+      border-top: none;
+      cursor: pointer;
+    
+      transition: box-shadow $transition-time $function-time;
+      &:hover,
+      &:focus {
+        box-shadow: $portfolio-cards-shedow;
+      }
+    }
+}
   .card-thumb__bloc {
     display: block;
     position: relative;
@@ -54,6 +56,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  
   .portfolio-cards__item:hover .card-thumb__overlay {
     opacity: 1;
     transform: translateY(0);

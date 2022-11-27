@@ -1,7 +1,7 @@
 .preferences {
-    @extend %section;
-}
-.section__title--hidden {
+  @extend %section;
+
+  &__title--hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -13,38 +13,48 @@
     clip-path: inset(50%);
     margin: -1px;
   }
-  .preferences__subtitle {
+
+  &__subtitle {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: $secondary-text-color;
   }
-  .preferences__details {
+
+  &__details {
     font-size: 14px;
   }
-  .prferences__list {
+}
+
+.prferences {
+  &__list {
     @extend %list;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .prferences__item {
+
+  &__item {
     width: 270px;
   }
-  .prferences__item:not(:last-child) {
+
+  &__item:not(:last-child) {
     margin-right: 30px;
   }
-  .bloc__icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 270px;
-    min-height: 120px;
-    margin-bottom: 30px;
-    background-color: $secondary-bgr;
-  }
-  .preference__icon {
+
+  &__icon {
     max-width: 70px;
     max-height: 70px;
   }
+}
+
+.bloc__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 270px;
+  min-height: 120px;
+  margin-bottom: 30px;
+  background-color: $secondary-bgr;
+}
