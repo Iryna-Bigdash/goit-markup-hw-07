@@ -19,65 +19,70 @@
       &:focus {
         box-shadow: $portfolio-cards-shedow;
       }
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+      }
+    }
+    .portfolio-cards__item:hover .card-thumb__overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    &__meta{
+      display: block;
+      width: 100%;
+      padding: 20px 24px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 2;
+      color: $secondary-text-color;
+    }
+    &__description {
+      line-height: 1.88;
     }
 }
-  .card-thumb__bloc {
+
+
+
+
+
+  .card-thumb {
     display: block;
     position: relative;
     overflow: hidden;
-  }
-  .card-thumb__image {
-    display: block;
-  }
-  .card-thumb__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: $thumb-text-bgr;
-  
-    transform: translateY(100%);
-    transition: transform $transition-time $function-time,
-      opacity $transition-time $function-time;
-  }
-  .card-thumb__text {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    color: $white-color;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.5555;
-    padding: 63px 24px;
-  
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+    &__image {
+      display: block;
+    }
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $thumb-text-bgr;
+    
+      transform: translateY(100%);
+      transition: transform $transition-time $function-time,
+        opacity $transition-time $function-time;
+    }
+    &__text {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      color: $white-color;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.5555;
+      padding: 63px 24px;
+    
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
+  }
   
-  .portfolio-cards__item:hover .card-thumb__overlay {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .portfolio-card__title {
-    font-size: 18px;
-    line-height: 2;
-    color: $secondary-text-color;
-  }
-  .portfolio-text__bloc {
-    display: block;
-    width: 100%;
-    padding: 20px 24px;
-  }
-  .ortfolio-card__description {
-    line-height: 1.88;
-  }
-  .portfolio-cards__item:nth-child(3n) {
-    margin-right: 0;
-  }
-  .portfolio-cards__item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }

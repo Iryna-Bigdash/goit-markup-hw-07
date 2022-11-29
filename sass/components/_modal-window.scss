@@ -32,11 +32,13 @@
   margin-top: 8px;
   margin-right: 8px;
   cursor: pointer;
+  &:hover {
+    .modal-close__icon {
+      fill: $acsent-color;
+    }
+  }
 }
 .modal-close__icon {
   fill: $black-color;
   transition: transform $transition-time $function-time;
-}
-.modal-close__button:hover .modal-close__icon {
-  fill: $acsent-color;
 }
