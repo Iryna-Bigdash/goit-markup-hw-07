@@ -27,7 +27,7 @@
   }
 }
 
-.prferences {
+.preferences {
   &__list {
     @extend %list;
     display: flex;
@@ -42,14 +42,9 @@
   &__item:not(:last-child) {
     margin-right: 30px;
   }
-
-  &__icon {
-    max-width: 70px;
-    max-height: 70px;
-  }
 }
 
-.bloc__icons {
+.preferences__icons {
   display: flex;
   align-items: center;
   justify-content: center;

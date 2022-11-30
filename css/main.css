@@ -27,7 +27,7 @@ body {
   color: #212121;
 }
 
-.portfolio-cards__list, .portfolio-nav__list, .footer-network__item, .footer-network__list, .footer-contacts__list, .clients__list, .social-networks__list, .team__list, .projects__list, .prferences__list, .contacts, .header-nav__list {
+.portfolio-cards__list, .portfolio-nav__list, .footer-network__item, .footer-network__list, .footer-contacts__list, .clients__list, .social-networks__list, .team__list, .projects__list, .preferences__list, .contacts, .header-nav__list {
   list-style: none;
 }
 
@@ -276,7 +276,7 @@ body {
   font-size: 14px;
 }
 
-.prferences__list {
+.preferences__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,18 +286,14 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.prferences__item {
+.preferences__item {
   width: 270px;
 }
-.prferences__item:not(:last-child) {
+.preferences__item:not(:last-child) {
   margin-right: 30px;
 }
-.prferences__icon {
-  max-width: 70px;
-  max-height: 70px;
-}
 
-.bloc__icons {
+.preferences__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +337,7 @@ body {
   margin-right: 30px;
 }
 
-.project__image {
+.projects__image {
   display: block;
 }
 
@@ -762,7 +758,7 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close__button {
+.close-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -784,11 +780,11 @@ body {
   margin-right: 8px;
   cursor: pointer;
 }
-.modal-close__button:hover .modal-close__icon {
+.close-button:hover .close-button__icon {
   fill: #2196f3;
 }
 
-.modal-close__icon {
+.close-button__icon {
   fill: #000000;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -870,8 +866,7 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-
-.form__group {
+.modal-form__group {
   position: relative;
 }
 
@@ -970,7 +965,7 @@ body {
   border-radius: 4px;
 }
 
-.section__title--hidden {
+.section-title--hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;

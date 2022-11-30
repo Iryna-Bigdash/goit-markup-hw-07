@@ -15,7 +15,7 @@
   transition: transform $transition-time $function-time;
 }
 
-.modal-close__button {
+.close-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -33,12 +33,12 @@
   margin-right: 8px;
   cursor: pointer;
   &:hover {
-    .modal-close__icon {
+    .close-button__icon {
       fill: $acsent-color;
     }
   }
 }
-.modal-close__icon {
+.close-button__icon {
   fill: $black-color;
   transition: transform $transition-time $function-time;
 }
